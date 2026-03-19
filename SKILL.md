@@ -1,5 +1,5 @@
 ---
-name: thinking-framework
+name: Thinking-Framework
 description: >
   Performs a deep, multi-layer cognitive and psychological excavation of any
   target — a person, leader, philosopher, organization, movement, or discipline
@@ -14,9 +14,10 @@ description: >
   "thinking framework", "deep analysis of X's mind", "psychological profile of X",
   or any request to reason through a specific person's or system's cognitive lens.
   Also saves loaded frameworks to MEMORY.md for persistence across sessions.
-version: "1.0.0"
-author: "alradyin"
-tags: [mindset, psychology, mental-models, frameworks, decision-making, cognition, deep-analysis]
+metadata:
+  version: "1.1.0"
+  author: "alradyin"
+  tags: [mindset, psychology, mental-models, frameworks, decision-making, cognition, deep-analysis]
 compatibility:
   models: ["claude-*", "gpt-*", "gemini-*", "deepseek-*", "ollama/*", "openrouter/*"]
   note: >

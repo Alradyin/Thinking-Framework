@@ -4,7 +4,7 @@
 > Not role-play. Not impersonation. Cognitive architecture transfer.
 
 [![ClaWHub](https://img.shields.io/badge/ClaWHub-thinking--framework-coral?style=flat-square)](https://clawhub.ai/Alradyin/thinking-framework)
-[![Version](https://img.shields.io/badge/version-1.0.0-blue?style=flat-square)](https://github.com/Alradyin/Thinking-Framework)
+[![Version](https://img.shields.io/badge/version-1.1.0-blue?style=flat-square)](CHANGELOG.md)
 [![License: MIT-0](https://img.shields.io/badge/license-MIT--0-green?style=flat-square)](LICENSE)
 [![Models](https://img.shields.io/badge/works%20with-Claude%20%7C%20GPT%20%7C%20Gemini%20%7C%20Ollama-purple?style=flat-square)]()
 
@@ -27,20 +27,22 @@ That's the gap this skill fills.
 
 Thinking Framework performs a **deep, multi-layer excavation** of any target:
 
-**Cognitive Layer**
+**Cognitive Layer** (C1–C7)
 - Mental models they use to explain reality
 - Decision heuristics that drive choices under pressure
 - What they're actually optimizing for (stated vs. hidden)
 - How they reframe problems before solving them
-- Risk posture and time horizon
+- Risk posture and time horizon architecture
+- Paradox and contradiction structure
 
-**Psychological Layer**
+**Psychological Layer** (P1–P8)
 - Core wound and formative architecture
 - Dominant motivational deep structure
 - Ego structure and identity architecture
 - Defense mechanisms under pressure
 - Shadow profile (what's suppressed / projected)
 - Relational and attachment patterns
+- Existential relationship (mortality, legacy, meaning)
 - Stress and breakdown profile
 
 Once loaded, the AI **reasons FROM inside that framework** — not about it.
@@ -101,6 +103,8 @@ Simply tell your AI:
 "Think like [target]"
 "Activate [target] mindset"
 "[target] mode"
+"How would [target] approach [problem]?"
+"Blend [target A] with [target B]"
 ```
 
 Works with any person, philosopher, organization, discipline, or school of thought.
@@ -113,7 +117,10 @@ cognitive and psychological architecture, then stays in that mode until you exit
 "Exit framework"
 "Switch to [new target]"
 "Blend [target] with current framework"
+"What does this framework miss here?"
 ```
+
+For a full list of prompt patterns and tips, see [WORKFLOW.md](WORKFLOW.md).
 
 ---
 
@@ -129,6 +136,25 @@ Anything with enough documented evidence:
 
 ---
 
+## File Structure
+
+```
+Thinking-Framework/
+├── SKILL.md                          ← Skill specification & execution protocol
+├── WORKFLOW.md                       ← User guide: prompt patterns & tips
+├── CHANGELOG.md                      ← Version history
+├── references/
+│   ├── layer1-cognitive.md           ← 7-dimension cognitive excavation engine
+│   ├── layer2-psychological.md       ← 8-dimension psychological deep analysis
+│   ├── layer3-operational.md         ← Active framework mode behavioral protocol
+│   └── model-guidance.md             ← Compensation for weaker / local models
+└── examples/
+    ├── richard-feynman.md            ← Full worked example: complete excavation
+    └── composite-feynman-aurelius.md ← Composite mode: Feynman × Aurelius
+```
+
+---
+
 ## Model Compatibility
 
 | Model | Quality |
@@ -139,22 +165,8 @@ Anything with enough documented evidence:
 | Llama 70B+ | ⭐⭐⭐ Good — cognitive layer strong, psychology moderate |
 | Local 7B–13B | ⭐⭐ Basic — cognitive layer only |
 
-The skill includes a `model-guidance.md` with explicit compensation
+The skill includes `references/model-guidance.md` with explicit compensation
 instructions for weaker models — it adapts automatically.
-
----
-
-## Skill Architecture
-
-```
-Thinking-Framework/
-├── SKILL.md                          # Main orchestrator & execution protocol
-└── references/
-    ├── layer1-cognitive.md           # 7-dimension cognitive excavation engine
-    ├── layer2-psychological.md       # 8-dimension psychological deep analysis
-    ├── layer3-operational.md         # Active framework mode behavioral protocol
-    └── model-guidance.md             # Compensation for weaker / local models
-```
 
 ---
 
@@ -162,8 +174,8 @@ Thinking-Framework/
 
 This skill is designed for **cognitive analysis**, not impersonation.
 
-- Never generates content as if it were real quotes from real people
-- Never produces harmful, unethical, or misleading content
+- Never generates content formatted as real quotes from real people
+- Never fabricates biographical facts or undocumented decisions
 - Always labels inferences separately from documented facts
 - Surfaces blind spots and failure modes — honest analysis, not flattery
 - Living persons: stays within publicly documented cognitive and behavioral patterns only
@@ -173,6 +185,7 @@ This skill is designed for **cognitive analysis**, not impersonation.
 ## Contributing
 
 Issues and PRs welcome. Particularly interested in:
+- Additional worked examples (new targets, composite blends)
 - Additional layer reference files (e.g., `layer4-sociological.md`)
 - Organization and discipline-specific analysis templates
 - Test cases and example outputs for different models
