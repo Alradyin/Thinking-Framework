@@ -4,6 +4,16 @@ All notable changes to this project are documented here.
 
 ---
 
+## [1.2.0] — 2026-03-20
+
+### Added
+- **[references/layer4-methodological.md](references/layer4-methodological.md)** — New methodological toolkit layer (M1–M4): problem attack sequences, satisfaction criteria, generative patterns, and rejection heuristics. Includes worked example for Elon Musk across all M dimensions. This is what separates "knowing how someone thinks" from "running their actual problem-attack process."
+
+### Changed
+- **[SKILL.md](SKILL.md)** — Integrated Layer 4 into the standard execution protocol (Step 2 now reads L1 + L2 + L4 before the card). Framework Card updated with METHODOLOGICAL TOOLKIT section. Session persistence format extended with methodological core, generative move, and kill signal. Version bump to 1.2.0.
+
+---
+
 ## [1.1.0] — 2026-03-20
 
 ### Added

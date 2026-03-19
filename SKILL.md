@@ -15,7 +15,7 @@ description: >
   or any request to reason through a specific person's or system's cognitive lens.
   Also saves loaded frameworks to MEMORY.md for persistence across sessions.
 metadata:
-  version: "1.1.0"
+  version: "1.2.0"
   author: "alradyin"
   tags: [mindset, psychology, mental-models, frameworks, decision-making, cognition, deep-analysis]
 compatibility:
@@ -48,10 +48,14 @@ This skill uses a layered reference system. Read files on demand:
 | `references/layer1-cognitive.md` | For the conscious cognitive architecture (mental models, heuristics, decisions) |
 | `references/layer2-psychological.md` | For the deep psychological layer (unconscious drivers, wounds, defenses, shadow) |
 | `references/layer3-operational.md` | For active framework mode — how to reason FROM the loaded system |
+| `references/layer4-methodological.md` | For the methodological toolkit — problem attack sequences, satisfaction criteria, generative patterns, rejection heuristics |
 | `references/model-guidance.md` | If running on a weaker/local model — explicit compensation instructions |
 
-**For a standard framework load, read all of Layer 1 + Layer 2 before presenting
+**For a standard framework load, read Layer 1 + Layer 2 + Layer 4 before presenting
 the Framework Card. Layer 3 governs all subsequent interaction.**
+
+**Layer 4 is what separates "knowing how X thinks" from "operating like X."
+Always load it.**
 
 ---
 
@@ -75,10 +79,15 @@ If the target is clear → proceed immediately. Do not ask unnecessary questions
 
 ### STEP 2 — Run the Full Excavation
 
-Read `references/layer1-cognitive.md` AND `references/layer2-psychological.md`.
-Apply both layers to the target using everything the model knows about them:
+Read `references/layer1-cognitive.md`, `references/layer2-psychological.md`,
+AND `references/layer4-methodological.md`.
+Apply all three layers to the target using everything the model knows about them:
 published work, documented decisions, known biography, behavioral patterns,
 interviews, critiques, and psychological inferences from observable evidence.
+
+**Layer 4 is not optional.** It's what makes the framework operational —
+the difference between knowing how someone thinks and being able to run
+their actual problem-attack process on new problems.
 
 **Use explicit chain-of-thought reasoning.** Think through each dimension
 step by step before generating the output. This is especially important
@@ -118,6 +127,12 @@ Show the user a complete Framework Card before activating. Format:
 ║  Shadow           » [What's suppressed / projected outward]      ║
 ║  Core Paradox     » [The central tension held, not resolved]     ║
 ║                                                                  ║
+║  ── METHODOLOGICAL TOOLKIT ───────────────────────────────────  ║
+║  Attack Sequence  » [First 2–3 moves when facing a hard problem] ║
+║  Satisfied When   » [Specific internal criterion for "solved"]   ║
+║  Generative Move  » [The reasoning move that produces insights]  ║
+║  Kill Signal      » [What makes them reject an approach]         ║
+║                                                                  ║
 ║  ── FAILURE MAP ──────────────────────────────────────────────  ║
 ║  Blind Spots      » [1–2 structural failure modes, unvarnished]  ║
 ║  When It Breaks   » [Conditions where this framework misfires]   ║
@@ -148,6 +163,9 @@ so it persists across sessions. Format:
 
 **Cognitive core**: [2-sentence summary of dominant mental models + heuristics]
 **Psychological core**: [1-sentence on core drive + primary defense]
+**Methodological core**: [Attack sequence first move + satisfaction criterion]
+**Generative move**: [The single most powerful reasoning pattern]
+**Kill signal**: [Primary rejection heuristic]
 **Optimizing for**: [Primary utility in plain language]
 **Key reframing move**: [The signature intellectual move]
 **Main blind spot**: [The honest failure mode]
